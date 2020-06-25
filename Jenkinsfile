@@ -5,7 +5,7 @@ node() {
     stage("Prepare Workspace") {
         cleanWs()
         env.WORKSPACE_LOCAL = bat(returnStdout: true, script: 'echo %cd%').trim()
-        env.BUILD_TIME = bat(returnStdout: true, script: 'powershell get-date -format {yyyy-MM-dd-HH:mm:ss}').trim()
+        env.BUILD_TIME = "2020-06-25-14:32:52"
         echo "Workspace set to:" + env.WORKSPACE_LOCAL
         echo "Build time:" + env.BUILD_TIME
     }
