@@ -44,9 +44,9 @@ node() {
 				"issuetype": {
 				"id": "''' + testExecutionFieldId + '''"
 				},
-				"''' + testEnvironmentFieldName + '''" : [
+				"''' + testEnvironmentFieldName + '''" : {
 				"''' + environment + '''"
-				]
+				}
 				}
 				}'''
 
