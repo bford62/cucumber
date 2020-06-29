@@ -39,6 +39,8 @@ node() {
 					"project": {
 					"id": "''' + projectId + '''"
 				},
+				"labels":''' + labels + ''',
+				"description":"''' + description + '''",
 				"summary": "Testing Jenkins - Automated Regression Execution @ ''' + env.BUILD_TIME + ' ' + environment + ''' " ,
 				"issuetype": {
 				"id": "''' + testExecutionFieldId + '''"
