@@ -43,10 +43,7 @@ node() {
 				"summary": "Automated Regression Execution @ ''' + env.BUILD_TIME + ' ' + environment + ''' " ,
 				"issuetype": {
 				"id": "''' + testExecutionFieldId + '''"
-				},
-				"''' + testEnvironmentFieldName + '''" : [
-				"''' + environment + '''"
-				]
+				}
 				}
 				}'''
 
