@@ -26,7 +26,7 @@ node() {
     }
 	stage('Import results to Xray') {
 
-		def description = "[BUILD_URL|${env.BUILD_URL}]"
+		def description = "[TEST_BUILD_URL|${env.BUILD_URL}]"
 		def labels = '["regression","automated_regression"]'
 		def environment = "DEV"
 		def testExecutionFieldId = 10552
@@ -44,7 +44,10 @@ node() {
 				"summary": "Testing Jenkins - Automated Regression Execution @ ''' + env.BUILD_TIME + ' ' + environment + ''' " ,
 				"issuetype": {
 				"id": "''' + testExecutionFieldId + '''"
-				}
+				},
+                "''' + testEnvironmentFieldName + '''" : [
+                "''' + environment + '''"
+                ]
 				}
 				}'''
 
