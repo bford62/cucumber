@@ -32,12 +32,12 @@ node() {
 		def testExecutionFieldId = 10552
 		def testEnvironmentFieldName = "customfield_10372"
 		def projectKey = "Xray-Test"
-		def projectID = 10609
+		def projectId = 10609
 		def xrayConnectorId = 'be74d016-d576-454a-95cf-92247a06a19e'
 		def info = '''{
 				"fields": {
 					"project": {
-					"key": "''' + projectKey + '''"
+					"id": "''' + projectId + '''"
 				},
 				"summary": "Testing Jenkins - Automated Regression Execution @ ''' + env.BUILD_TIME + ' ' + environment + ''' " ,
 				"issuetype": {
