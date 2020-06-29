@@ -37,17 +37,12 @@ node() {
 		def info = '''{
 				"fields": {
 					"project": {
-					"id": "''' + projectID + '''"
+					"key": "''' + projectKey + '''"
 				},
-				"labels":''' + labels + ''',
-				"description":"''' + description + '''",
 				"summary": "Testing Jenkins - Automated Regression Execution @ ''' + env.BUILD_TIME + ' ' + environment + ''' " ,
 				"issuetype": {
 				"id": "''' + testExecutionFieldId + '''"
-				},
-				"''' + testEnvironmentFieldName + '''" : [
-				"''' + environment + '''"
-				]
+				}
 				}
 				}'''
 
