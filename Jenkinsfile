@@ -40,7 +40,7 @@ node() {
 				},
 				"labels":''' + labels + ''',
 				"description":"''' + description + '''",
-				"summary": "Test1 - Automated Regression Execution @ ''' + env.BUILD_TIME + ' ' + environment + ''' " ,
+				"summary": "Testing Jenkins - Automated Regression Execution @ ''' + env.BUILD_TIME + ' ' + environment + ''' " ,
 				"issuetype": {
 				"id": "''' + testExecutionFieldId + '''"
 				},
