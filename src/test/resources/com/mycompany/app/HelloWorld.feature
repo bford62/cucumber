@@ -1,4 +1,4 @@
-Feature: Hello World
+Feature: First Hello World
 
   @hello @XT-93
   Scenario Outline: First Hello World
