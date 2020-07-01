@@ -1,15 +1,14 @@
-Feature: karate 'hello world' example
+Feature: Google Searching
 
   @hello @XT-93
-  Scenario: create and retrieve a cat
-    Given url 'http://myhost.com/v1/cats'
-    And request { name: 'Billie' }
-    When method post
-    Then status fail
-    And match response == { id: '#notnull', name: 'Billie' }
+  Scenario: Search from the search bar
+    Given a web browser is at the Google home page
+    When the user enters "panda" into the search bar
+    Then links related to "panda" are shown on the results page
 
-    Given path response.id
-    When method get
-    Then status pass
+  Scenario: Image search
+    Given Google search results for "panda" are shown
+    When the user clicks on the "Images" link at the top of the results page
+    Then images related to "panda" are shown on the results page
 
   
