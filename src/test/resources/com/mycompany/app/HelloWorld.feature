@@ -2,7 +2,7 @@ Feature: First Hello World
 
   @hello @XT-93
   Scenario Outline: First Hello World
-    Given I have "<ask>" task
+    Given I have "<task>" fail
     And Step from "<scenario>" in "<file>" feature file
     When I attempt to solve it
     Then I surely succeed
