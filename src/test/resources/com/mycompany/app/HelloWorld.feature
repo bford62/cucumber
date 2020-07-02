@@ -1,6 +1,6 @@
 Feature: First Hello World
 
-  @hello @XT-93
+  @firsth @hello @XT-93
   Scenario Outline: First Hello World
     Given I have "<task>" fail
     And Step from "<scenario>" in "<file>" feature file
