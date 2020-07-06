@@ -5,7 +5,6 @@ Feature: First Hello World
     Given I have "<task>" task
     And Step from "<scenario>" in "<file>" feature file
     When I attempt to solve it
-    But The attempt is not solved
     Then I surely succeed
     Examples:
       | task  | scenario     | file          |
